@@ -1,0 +1,38 @@
+Test Case 1
+Initial Power: 15
+Enemies: [1, 2, 5, 10, 4, 8, 6, 9, 3, 7, 5]
+Skips: 1
+Recharge: 2
+Execution:
+
+Enemy 1 (Power: 1): Defeated, power = 15 - 1 = 14
+Enemy 2 (Power: 2): Defeated, power = 14 - 2 = 12
+Enemy 3 (Power: 5): Defeated, power = 12 - 5 = 7
+Enemy 4 (Power: 10): Insufficient power, recharge used, power = 15 + 7 - 10 = 12, recharge = 1
+Enemy 5 (Power: 4): Defeated, power = 12 - 4 = 8
+Enemy 6 (Power: 8): Insufficient power, recharge used, power = 15 + 8 - 8 = 15, recharge = 0
+Enemy 7 (Power: 6): Defeated, power = 15 - 6 = 9
+Enemy 8 (Power: 9): Insufficient power, 1 skip used, skips = 0
+Enemy 9 (Power: 3): Defeated, power = 9 - 3 = 6
+Enemy 10 (Power: 7): Insufficient power, cannot continue
+Result: Abhimanyu cannot cross the Chakravyuha in Test Case 1.
+
+Test Case 2
+Initial Power: 30
+Enemies: [5, 8, 12, 15, 6, 7, 9, 5, 10, 11, 4]
+Skips: 2
+Recharge: 2
+Execution:
+
+Enemy 1 (Power: 5): Defeated, power = 30 - 5 = 25
+Enemy 2 (Power: 8): Defeated, power = 25 - 8 = 17
+Enemy 3 (Power: 12): Defeated, power = 17 - 12 = 5
+Enemy 4 (Power: 15): Insufficient power, recharge used, power = 30 + 5 - 15 = 20, recharge = 1
+Enemy 5 (Power: 6): Defeated, power = 20 - 6 = 14
+Enemy 6 (Power: 7): Defeated, power = 14 - 7 = 7
+Enemy 7 (Power: 9): Insufficient power, recharge used, power = 30 + 7 - 9 = 28, recharge = 0
+Enemy 8 (Power: 5): Defeated, power = 28 - 5 = 23
+Enemy 9 (Power: 10): Defeated, power = 23 - 10 = 13
+Enemy 10 (Power: 11): Defeated, power = 13 - 11 = 2
+Enemy 11 (Power: 4): Defeated, power = 2 - 4 = -2 (but we have skips)
+Result: Abhimanyu can cross the Chakravyuha in Test Case 2.
